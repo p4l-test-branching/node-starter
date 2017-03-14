@@ -5,7 +5,8 @@ services:
     ports:
       - "27017:27017"
   web:
-    build: .
+    build:
+      context: .
       dockerfile: Dockerfile.test
     ports:
       - "3000:3000"
